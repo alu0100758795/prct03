@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt]{letter}
+\documentclass[a4paper,12pt]{article}
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
 
@@ -26,4 +26,33 @@
   tres guiones seguidos para producir un gui\'on de los que se usan
   como signo de puntuaci\'on --- como en esta oraci\'on.
   
+  \title{Titulo del art\'iculo}
+  \author{Nombre y Apellido \\ 
+	  T\'ecnicas experimentales~\footnote{Universidad de la Laguna}
+	  }
+  \date{\today}
+  \maketitle
+  
+  \begin{abstract}
+   En \LaTeX{}~\cite{Lam:86} es sencillo escribir expresiones
+   matem\'aticas como $a=\sum_{i=i}^{10} {x_i}^{3}$
+   y deben ser escritas entre dos simbolos \$.
+   Los super\'indices se obtienen con el simbolo \^{}, y
+   los sub\'indices con el simbolo \_. 
+   por ejemeplo: $x^2 \times y^{\alpha + \beta}$.
+   tambi\'en se pueden escribir f\'ormulas centradas:
+   \[h^2=a^2 + b^2\] 
+  \end{abstract}
+  
+  \section{Primera seccion}
+  
+  \begin{thebibliography}{00}
+   \bibitem{Lam:86}
+    Lamport, Leslie
+    TLA in picture
+    \emph{IEE Transactions on Software Engineering},
+    21(9), 768-775.
+    (1995)
+  \end{thebibliography}
+
 \end{document}
